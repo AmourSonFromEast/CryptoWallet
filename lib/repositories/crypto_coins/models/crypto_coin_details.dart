@@ -1,7 +1,7 @@
 import 'package:untitled3/repositories/crypto_coins/models/crypto_coin.dart';
 
 class CryptoCoinDetail extends CryptoCoin {
-   const CryptoCoinDetail({
+  const CryptoCoinDetail({
     required super.name,
     required super.priceInUSD,
     required super.imageUrl,
@@ -17,17 +17,12 @@ class CryptoCoinDetail extends CryptoCoin {
   final double low24Hours;
 
 
-
-
-
-
-  String get fullImageUrl => 'https://www.cryptocompare.com/$imageUrl';
-
   @override
-  List<Object> get props => super.props..addAll([
-    toSymbol,
-    lastUpdate,
-    hight24Hour,
-    low24Hours,
-  ]);
+  List<Object> get props => super.props
+    ..addAll([
+      toSymbol,
+      lastUpdate,
+      hight24Hour,
+      low24Hours,
+    ]);
 }

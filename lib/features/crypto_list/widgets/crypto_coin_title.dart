@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:untitled3/repositories/crypto_coins/models/crypto_coin.dart';
 
 class CryptoCoinTitle extends StatelessWidget {
